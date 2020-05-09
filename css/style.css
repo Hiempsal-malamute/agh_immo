@@ -3,7 +3,7 @@ body {
 }
 
 #header {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #avatar{
@@ -11,10 +11,60 @@ body {
     right:0px;
 }
 
+/* encadés des graphiques */
+.card {
+    padding:0px;
+    border: none;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.04);
+}
+
+.card-header {
+    height: 30px;
+    padding:5px;
+    padding-left:10px;
+    border: none;
+}
+
+.card-header > h6 {
+    font-weight: bolder;
+    font-size: .8em;
+}
+
+#chiffres {
+    margin-bottom: 10px;
+}
+
+/* appli */
+.nombre {
+    display: none;
+    margin: 10px;
+    margin-left: 16px;
+    padding:5px; 
+    padding-left:10px; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.04);
+}
+
+.nombre > span {
+    font-size: .7em;
+}
+
+.nombre > .number-display {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+}
+
+g.axis path {
+    stroke:yellow;
+    stroke-width: 0.5px;
+}
+
 .bar {
     opacity: .75;
     cursor: pointer;
-};
+    transition: ease 0.25s;
+}
 
 /* le hover en css sur les barres ne marche pas */
 .bar:hover{
