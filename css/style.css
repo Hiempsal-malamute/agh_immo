@@ -13,6 +13,7 @@ body {
 
 /* encadés des graphiques */
 .card {
+    display: none;
     padding:0px;
     border: none;
     box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.04);
