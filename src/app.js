@@ -100,10 +100,8 @@ Promise.all(promises).then(json => {
     // filtrage des données
     liste_type_annonce.addEventListener("change",e => {
         Array.from(document.getElementsByClassName("card")).forEach(card => {
-            if (card.style.display == "none") {
-                card.style.display = "block"
-            }
-        })
+            card.style.display = "block"
+        });
         // récupère la value choisie dans la liste déroulante
         type_annonce = e.target.value;
 
